@@ -10,6 +10,7 @@ body {
   font-size: 16px;
   color: #ffff;
   line-height: 1.05;
+  width: 100%;
 }
 
 li {
@@ -314,7 +315,7 @@ nav {
 
 #about {
   padding: 0 80px;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   /* z-index: 1000; */
 }
@@ -333,7 +334,7 @@ nav {
   color: #ffffff;
   font-weight: 700;
   display: inline-block;
-  padding-bottom: 2 5px;
+  padding-bottom: 25px;
 }
 
 .about p {
@@ -368,35 +369,42 @@ footer {
   text-decoration: none;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 470px) {
   nav {
     padding: 0 20px;
   }
 
-    .logo img {
-        width: 10rem;
-        display: block;
-        margin: 0 auto;
-    }
+  .logo img {
+    width: 10rem;
+    display: block;
+    margin: 0 auto;
+  }
 
   .container {
     padding: 0 20px;
   }
 
+  .main{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
   .main .hero h1 {
-    font-size: 1.2rem;
+    font-size: 2.5rem;
   }
 
   .main .hero p {
-    font-size: 15px;
+    font-size: 1rem;
+    padding-bottom: 20px;
   }
 
   .img-container img {
-    width: 100%;
+    width: 60%;
   }
 
   .btn {
-    width: 100%;
+    width: fit-content;
   }
 
   .cards-container {
@@ -408,7 +416,7 @@ footer {
   }
 
   .card-button {
-    width: 100%;
+    width: fit-content;
   }
 
   .card-details {
