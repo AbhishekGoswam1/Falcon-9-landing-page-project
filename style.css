@@ -71,42 +71,35 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  padding: 0 80px 50px 80px;
+  padding: 60px 80px 0 80px;
   height: 100vh;
   width: 100%;
 }
 
-.main {
-  height: 100vh;
-  width: 100%;
+.hero{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
 }
 
-.main .hero h1 {
+.hero h1 {
   font-size: 6rem;
   text-transform: uppercase;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.6rem;
   color: #ffffff;
-  font-weight: 600;
-  display: inline-block;
+  font-weight: 700;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
-.main .hero p {
-  font-size: 1.3rem;
+.hero p {
+  font-size: 1.4rem;
   color: #ffffff;
   font-weight: 300;
-}
-
-.img-container img {
-  border-radius: 8px;
-  width: 38vw;
-  height: auto;
-  object-fit: cover;
-  box-shadow: 15px 15px #d1d3d9c1;
 }
 
 .btn {
@@ -151,16 +144,9 @@ nav {
 
 #falcon {
   background-image: url(./images/falcon9-01.jpg);
-  background-size: cover;
-  /* background-attachment: fixed; */
-  background-position: center;
+  background-size: contain;
+  background-position: right;
   background-repeat: no-repeat;
-  /* mask-image: linear-gradient(
-    transparent 0%,
-    black 0%,
-    black 90%,
-    transparent 100%
-  ); */
   /* padding: 0 80px; */
   height: 100vh;
   width: 100%;
@@ -175,7 +161,7 @@ nav {
   flex-direction: column;
   background-color: #000;
   padding-left: 80px;
-  width: 44%;
+  width: 38%;
   height: 100%;
 }
 
@@ -183,13 +169,12 @@ nav {
   font-size: 3rem;
   color: #ffffff;
   font-weight: 700;
-  display: inline-block;
   padding-bottom: 20px;
 }
 
 .para {
-  width: 28rem;
-  font-size: 1.4rem;
+  width: 26rem;
+  font-size: 1.3rem;
   font-weight: 300;
   line-height: 1.5;
 }
@@ -198,18 +183,7 @@ nav {
 /* launches section */
 
 #launches {
-  background-color: #000;
-  /* background-image: url(./images/falcon9-00.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  mask-image: linear-gradient(
-    transparent 0%,
-    black 0%,
-    black 60%,
-    transparent 100%
-  ); */
+  background-color: #111010;
   padding: 0 80px;
   height: 100vh;
   width: 100%;
@@ -242,7 +216,6 @@ nav {
   /* flex-direction: column; */
   width: 70%;
 }
-
 
 .launch {
   display: flex;
@@ -278,9 +251,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
     gap: 25px;
-    /* padding-top: 30px; */
   }
   
   .card {
@@ -289,20 +260,14 @@ nav {
     border-radius: 10px;
     background: #ffffff;
     position: relative;
-    padding: 1.3rem;
-    border: 1px solid #ffffff;
-    transition: 0.5s ease-out;
-    overflow: visible;
+    padding: 1.2rem;
   }
   
   .card-details {
     color: black;
     height: 100%;
-    gap: 0.5em;
-    display: grid;
     place-content: center;
   }
-  
   
   .text-body {
     color: #0077ff;
@@ -313,23 +278,24 @@ nav {
   
   /*Text*/
   .text-title {
-    font-size: 1.35em;
+    font-size: 1.4em;
+    margin-bottom: 10px;
     font-weight: 600;
   }
   
   .card:hover {
     border-color: #000000;
-    box-shadow: 8px 10px rgba(0, 0, 0, 0.25);
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
   }
-
 
 
 /* About section */
 
 #about {
   padding: 0 80px;
-  height: 90vh;
   width: 100%;
+  height: calc(100vh - 50px);
   /* z-index: 1000; */
 }
 
@@ -346,25 +312,21 @@ nav {
   font-size: 3.2rem;
   color: #ffffff;
   font-weight: 700;
-  display: inline-block;
   padding-bottom: 25px;
 }
 
 .about p {
   font-size: 1.3rem;
-  text-align: justify;
   line-height: 1.5;
   color: #ffffff;
   font-weight: 200;
   width: 1080px;
-  background-color: #0000007a;
-  box-shadow: 10px 10px #000000b5;
 }
 
 /* Footer */
 
 footer {
-  height: 60px;
+  height: 50px;
   width: 100%;
   bottom: 0;
 }
