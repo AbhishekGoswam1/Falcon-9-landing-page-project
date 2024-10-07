@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none;
   scroll-behavior: smooth;
 }
 
@@ -21,7 +20,8 @@ p{
 }
 
 a {
-  color: #000000;
+  color: black;
+  text-decoration: none;
   font-family: inherit;
 }
 
@@ -100,7 +100,6 @@ nav {
   font-size: 1.4rem;
   color: #ffffff;
   font-weight: 300;
-  letter-spacing: 0.1rem;
 }
 
 .btn {
@@ -175,9 +174,9 @@ nav {
 
 .para {
   width: 26rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 
@@ -324,7 +323,7 @@ nav {
   width: 1080px;
 }
 
-.topbtn{
+.topbtn a{
   position: fixed;
   bottom: 25px;
   right: 30px;
@@ -335,6 +334,13 @@ nav {
   padding: 8px 12px;
   cursor: pointer;
   font-size: 1rem;
+}
+
+.topbtn a:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transition: 0.3s;
+  border: solid 1px #ffffff;
 }
 
 /* Footer */
