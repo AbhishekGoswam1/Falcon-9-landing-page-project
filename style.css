@@ -326,8 +326,8 @@ nav {
 
 .topbtn{
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 25px;
+  right: 30px;
   background-color: #ffffff;
   color: #000000;
   border-radius: 40px;
@@ -335,7 +335,6 @@ nav {
   padding: 8px 12px;
   cursor: pointer;
   font-size: 1rem;
-  z-index: 0;
 }
 
 /* Footer */
